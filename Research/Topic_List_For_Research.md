@@ -11,7 +11,7 @@ The purpose of this document is to show, as much as we possibly can, how our und
 ## Debugging(gdb)
 - 
 ## Memory 
-- 
+ - 
    ### Casting Integer Values
    - 
    ### Byte ordering
