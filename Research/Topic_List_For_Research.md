@@ -11,27 +11,27 @@ The purpose of this document is to show, as much as we possibly can, how our und
 ## Debugging(gdb)
 - 
 ## Memory 
-  
-   ### Casting Integer Values
-   - 
-   ### Byte ordering
-   - 
-   ### Pointers
-   - 
+- 
+### Casting Integer Values
+- 
+### Byte ordering
+- 
+### Pointers
+- 
 ## Floating Point Number Representation
 - 
-   ### IEEE Standard
-   - 
+### IEEE Standard
+- 
 ## Computer Systems
 - 
-   ### High Performance Computing
-   - 
-   ### Abstractions
-   - 
-   ### Instruction Set Architecture (ISA)
-   - 
-   ### Chip Manufacturing
-   - 
+### High Performance Computing
+- 
+### Abstractions
+- 
+### Instruction Set Architecture (ISA)
+- 
+### Chip Manufacturing
+- 
 ## RISC-V
 - 
 ## Executing Instructions
