@@ -10,7 +10,7 @@ This is for general information, useful in describing the TPU.
   - Hardwired activation functions
     
 ![](../TPU_Diagram.png)
-<p style="text-align: center; color: blue;">TPU block diagram</p>
+_TPU block diagram_
 
 
 # Topics of interest
@@ -77,7 +77,7 @@ The purpose of this document is to show, as much as we possibly can, how our und
 - With performance per watt being 30–80 times higher than contemporary CPUs and GPUs, TPUs exemplify the trade-offs between general-purpose flexibility and domain-specific efficiency [reference](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
   
 ![](../CPU_GPU_TPU_PerfPerWatt.png)
-<div style="text-align: center; color: blue;">Performance per Watt Comparison: CPU, GPU, and TPU</div>
+_Performance per Watt Comparison: CPU, GPU, and TPU_
 
 ## Performance
 - 
@@ -109,7 +109,7 @@ The purpose of this document is to show, as much as we possibly can, how our und
   - This organization method is useful for general-purpose computing, however the large number of registers and ALUs are both cost and power intensive.
 
     ![](../CPU_ALU_Flow.png)
-    <div style="text-align: center; color: blue;">General flow of read/operate/write in CPUs</div>
+    _General flow of read/operate/write in CPUs_
     
 - The Matrix Multiplier Unit (MXU) in a TPU implements ALUs in a systolic array, rather than the more common Von Neumann architecture.
   - A systolic array describes a homogenous network of tightly packed Data processing Units (DPUs). Each of these DPUs are called cells or nodes. Each node computes a piece of the output based on the data recieved from its upstream neighboring nodes, stores the partial result within itself, then passes it downstream. This flow of data goes through a network of hard-wired processor nodes that combine, process, merge, and sort the input data into the desired result.
@@ -122,7 +122,7 @@ The purpose of this document is to show, as much as we possibly can, how our und
 - The implementation of the systolic array is optimized for power and area efficiency, and is tailored specifically for matrix operations.
 
   ![](../Systolic_Array_Matrix_Multiplication.gif)
-  <div style="text-align: center; color: blue;">Matrix multiplication of an input matrix by a weight matrix in asystolic array</div>
+  _Matrix multiplication of an input matrix by a weight matrix in asystolic array_
 
   Because of this, there are some tradeoffs in exchange for the efficiency and operation density of the TPU:
   - Limited registers
