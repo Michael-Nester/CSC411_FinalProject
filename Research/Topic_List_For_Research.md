@@ -8,7 +8,10 @@ This is for general information, useful in describing the TPU.
   - 24MB of SRAM that work as registers
 - Activation Unit (AU)
   - Hardwired activation functions
-[TPU Diagram]()
+    
+![](../TPU_Diagram.png)
+
+
 
 # Topics of interest
 This is a  comprehensive list of topics covered in CSC 411. The idea is that during our research, we will fill in information under the topics that we come across as they relate to TPUs.
@@ -98,13 +101,17 @@ The purpose of this document is to show, as much as we possibly can, how our und
 - 
 ### ALUs
 - An Arithmetic Logic Unit (ALU) is essential for processing instructions. An ALU reads a binary input, and uses logic gates and arithmatic circuits to produces binary outputs. CPUs, GPUs, and TPUs all use ALUs. However, the TPU uses it much differently and more efficiently than the others.
-- The Matrix Multiplier Unit (MXU) in a TPU implements a systolic array, rather than the more common Von Neumann architecture.
+- A CPU utilizes registers for loading and storing values, while the ALU is instructed operations for which register to read from, and which to write to.
+  - This organization method is useful for general-purpose computing, however the large number of registers and ALUs are both cost and power intensive.
+
+    ![](../CPU_ALU_Flow.png)
+    
+- The Matrix Multiplier Unit (MXU) in a TPU implements ALUs in a systolic array, rather than the more common Von Neumann architecture.
   - A systolic array describes a homogenous network of tightly packed Data processing Units (DPUs). Each of these DPUs are called cells or nodes. Each node computes a piece of the output based on the data recieved from its upstream neighboring nodes, stores the partial result within itself, then passes it downstream. This flow of data goes through a network of hard-wired processor nodes that combine, process, merge, and sort the input data into the desired result.
     - This wave-like propogation of data makes it ideal for the operations of the TPU.
   - The use of the systolic array veers from the mainstream ideas of the Von Neumann architechture. Also, Amdahl's Law is not applied in the same way, due to the fact that you cannot optimize a singular 'part' of the systolic array, nor can you measure how long this 'part' is used, because of the parallel flow of data and the interconnectivity of nodes.
     - [Reference](https://en.wikipedia.org/wiki/Systolic_array)
-- A CPU utilizes registers for loading and storing values, while the ALU is instructed operations for which register to read from, and which to write to.
-  - This organization method is useful for general-purpose computing, however the large number of registers and ALUs are both cost and power intensive.
+
 - A TPU reads inputs in such a way that it only needs to read each input once, and access them many times for different operations. This eliminates the need for loading and storing values into registers, thus greatly decreasing cost, power, and size of the unit.
 - Additionally, the lack of registers allows for ALUs to be more energy efficient, as they only connect to other adjacent ALUs.
 - The implementation of the systolic array is optimized for power and area efficiency, and is tailored specifically for matrix operations.
@@ -120,6 +127,9 @@ The purpose of this document is to show, as much as we possibly can, how our und
 # Conclusion
 
 The study of TPUs through the lens of computer organization highlights the relevance of foundational principles like number systems, Boolean algebra, and processor design in addressing real-world computational challenges. By focusing on domain-specific needs, TPUs achieve unparalleled efficiency in machine learning, making them a benchmark for future hardware innovations.
+
+
+![](../CPU_GPU_TPU_PerfPerWatt.png)
 
 ## 
 
