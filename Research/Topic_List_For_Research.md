@@ -33,9 +33,10 @@ The purpose of this document is to show, as much as we possibly can, how our und
 ### Chip Manufacturing
 - 
 ## RISC-V
-- 
+- Although the simplicity of CPUs running with RISC-V ISAs allows for clock speeds in the GHz range, large matrices of operations can greatly slow down these processors.
 ## Executing Instructions
-- 
+- To speed up large matrix operations, RISC-V processors are able to preform vector processing, where operations are applied to an entire vector in parallel. This is commonly found in Graphics Processing Units (GPUs).
+- The TPU takes this idea a step further, allowing for parallel matrix processing. This means that a TPU has the ability to preform an operation on a large matrix, all at the same time. This jurastically reduces execution time compared to the scalar processing of CPUs.
 ### Executing Memory Instructions
 - 
 ### RISC-V Procedures
