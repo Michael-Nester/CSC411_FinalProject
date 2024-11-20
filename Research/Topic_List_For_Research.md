@@ -75,6 +75,10 @@ The purpose of this document is to show, as much as we possibly can, how our und
 ### Optimization 
 - The TPU features a large (28 MB) on-chip memory to minimize latency from accessing external memory. This design reflects the importance of efficient memory hierarchy in computer architecture.
 - With performance per watt being 30–80 times higher than contemporary CPUs and GPUs, TPUs exemplify the trade-offs between general-purpose flexibility and domain-specific efficiency [reference](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
+  
+![](../CPU_GPU_TPU_PerfPerWatt.png)
+
+
 ## Performance
 - 
 ### Amdahl's Law
@@ -127,9 +131,6 @@ The purpose of this document is to show, as much as we possibly can, how our und
 # Conclusion
 
 The study of TPUs through the lens of computer organization highlights the relevance of foundational principles like number systems, Boolean algebra, and processor design in addressing real-world computational challenges. By focusing on domain-specific needs, TPUs achieve unparalleled efficiency in machine learning, making them a benchmark for future hardware innovations.
-
-
-![](../CPU_GPU_TPU_PerfPerWatt.png)
 
 ## 
 
