@@ -138,7 +138,9 @@ The purpose of this document is to show, as much as we possibly can, how our und
 
 The study of TPUs through the lens of computer organization highlights the relevance of foundational principles like number systems, Boolean algebra, and processor design in addressing real-world computational challenges. By focusing on domain-specific needs, TPUs achieve unparalleled efficiency in machine learning, making them a benchmark for future hardware innovations.
 
-## 
+# References
+[{1}Google TPU Documentation](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
+[{2}Systolic Array Article](https://en.wikipedia.org/wiki/Systolic_array)
 
 ## 
 
