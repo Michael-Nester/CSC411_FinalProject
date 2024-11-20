@@ -10,7 +10,7 @@ This is for general information, useful in describing the TPU.
   - Hardwired activation functions
     
 ![](../TPU_Diagram.png)
-<div style="text-align: center; color: blue;">TPU block diagram</div>
+<p style="text-align: center; color: blue;">TPU block diagram</p>
 
 
 # Topics of interest
