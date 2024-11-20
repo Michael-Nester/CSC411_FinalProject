@@ -3,7 +3,7 @@ This is for general information, useful in describing the TPU.
 
 ##Components
 - Matrix Multiplier Unit (MXU)
-  - 65,536(2^16) 8-bit multiply-and-add units for matrix operations
+  - 65,536(256*256) 8-bit multiply-and-add units for matrix operations
 - Unified Buffer (UB)
   - 24MB of SRAM that work as registers
 - Activation Unit (AU)
@@ -106,7 +106,11 @@ The purpose of this document is to show, as much as we possibly can, how our und
 - A CPU utilizes registers for loading and storing values, while the ALU is instructed operations for which register to read from, and which to write to.
   - This organization method is useful for general-purpose computing, however the large number of registers and ALUs are both cost and power intensive.
 - A TPU reads inputs in such a way that it only needs to read each input once, and access them many times for different operations. This eliminates the need for loading and storing values into registers, thus greatly decreasing cost, power, and size of the unit.
-- Additionally, the lack of registers allows for ALUs to be more energy efficient, as they only connect to other adjacent ALUs. 
+- Additionally, the lack of registers allows for ALUs to be more energy efficient, as they only connect to other adjacent ALUs.
+- The implementation of the systolic array is optimized for power and area efficiency, and is tailored specifically for matrix operations. Because of this, there are some tradeoffs in exchange for the efficiency and operation density of the TPU:
+  - Limited registers
+  - Operational and control flexibility
+- These tradeoffs make TPUs not suitable for everyday use compared to CPUs.
 ### Delays
 - 
 # Conclusion
