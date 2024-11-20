@@ -1,7 +1,7 @@
-#TPU General
+# TPU General
 This is for general information, useful in describing the TPU.
 
-##Components
+## Components
 - Matrix Multiplier Unit (MXU)
   - 65,536(256*256) 8-bit multiply-and-add units for matrix operations
 - Unified Buffer (UB)
