@@ -11,7 +11,7 @@ This is for general information, useful in describing the TPU.
     
 ![](../TPU_Diagram.png)
 
-_TPU block diagram_
+> _TPU block diagram_
 
 
 # Topics of interest
@@ -79,7 +79,7 @@ The purpose of this document is to show, as much as we possibly can, how our und
   
 ![](../CPU_GPU_TPU_PerfPerWatt.png)
 
-_Performance per Watt Comparison: CPU, GPU, and TPU_
+> _Performance per Watt Comparison: CPU, GPU, and TPU_
 
 ## Performance
 - 
@@ -112,7 +112,7 @@ _Performance per Watt Comparison: CPU, GPU, and TPU_
 
     ![](../CPU_ALU_Flow.png)
     
-    _General flow of read/operate/write in CPUs_
+    > _General flow of read/operate/write in CPUs_
     
 - The Matrix Multiplier Unit (MXU) in a TPU implements ALUs in a systolic array, rather than the more common Von Neumann architecture.
   - A systolic array describes a homogenous network of tightly packed Data processing Units (DPUs). Each of these DPUs are called cells or nodes. Each node computes a piece of the output based on the data recieved from its upstream neighboring nodes, stores the partial result within itself, then passes it downstream. This flow of data goes through a network of hard-wired processor nodes that combine, process, merge, and sort the input data into the desired result.
@@ -126,7 +126,7 @@ _Performance per Watt Comparison: CPU, GPU, and TPU_
 
   ![](../Systolic_Array_Matrix_Multiplication.gif)
   
-  _Matrix multiplication of an input matrix by a weight matrix in asystolic array_
+  > _Matrix multiplication of an input matrix by a weight matrix in asystolic array_
 
   Because of this, there are some tradeoffs in exchange for the efficiency and operation density of the TPU:
   - Limited registers
