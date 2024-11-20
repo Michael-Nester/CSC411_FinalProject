@@ -10,6 +10,7 @@ This is for general information, useful in describing the TPU.
   - Hardwired activation functions
     
 ![](../TPU_Diagram.png)
+
 _TPU block diagram_
 
 
@@ -77,6 +78,7 @@ The purpose of this document is to show, as much as we possibly can, how our und
 - With performance per watt being 30–80 times higher than contemporary CPUs and GPUs, TPUs exemplify the trade-offs between general-purpose flexibility and domain-specific efficiency [reference](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
   
 ![](../CPU_GPU_TPU_PerfPerWatt.png)
+
 _Performance per Watt Comparison: CPU, GPU, and TPU_
 
 ## Performance
@@ -109,6 +111,7 @@ _Performance per Watt Comparison: CPU, GPU, and TPU_
   - This organization method is useful for general-purpose computing, however the large number of registers and ALUs are both cost and power intensive.
 
     ![](../CPU_ALU_Flow.png)
+    
     _General flow of read/operate/write in CPUs_
     
 - The Matrix Multiplier Unit (MXU) in a TPU implements ALUs in a systolic array, rather than the more common Von Neumann architecture.
@@ -122,6 +125,7 @@ _Performance per Watt Comparison: CPU, GPU, and TPU_
 - The implementation of the systolic array is optimized for power and area efficiency, and is tailored specifically for matrix operations.
 
   ![](../Systolic_Array_Matrix_Multiplication.gif)
+  
   _Matrix multiplication of an input matrix by a weight matrix in asystolic array_
 
   Because of this, there are some tradeoffs in exchange for the efficiency and operation density of the TPU:
