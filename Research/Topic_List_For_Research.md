@@ -9,13 +9,13 @@ The purpose of this document is to show, as much as we possibly can, how our und
 ## Integers (signed and unsigned, representing data as bits)
 - 
 ## Debugging(gdb)
-- 
+- Debugging specialized processors like TPUs requires understanding their instruction flow and behavior under different workloads. Debugging tools are used to trace operations at the binary level. For example, analyzing TPU performance involves profiling individual matrix operations and their interaction with memory hierarchies. These tasks parallel debugging C programs with tools like GDB, as discussed in the lecture slides
 ## Memory 
 - 
 ### Casting Integer Values
 - 
 ### Byte ordering
-- 
+- TPUs use big endian
 ### Pointers
 - 
 ## Floating Point Number Representation
@@ -23,13 +23,13 @@ The purpose of this document is to show, as much as we possibly can, how our und
 ### IEEE Standard
 - 
 ## Computer Systems
-- 
+- TPUs exemplify the design principles of domain-specific processors. Unlike CPUs or GPUs, which are general-purpose, TPUs are tailored for neural network inference.
 ### High Performance Computing
 - 
 ### Abstractions
 - 
 ### Instruction Set Architecture (ISA)
-- 
+- TPUs use a simplified instruction set closer to the RISC (Reduced Instruction Set Computer) philosophy. This streamlined instruction set minimizes decoding complexity and maximizes execution efficiency.
 ### Chip Manufacturing
 - 
 ## RISC-V
@@ -55,7 +55,8 @@ The purpose of this document is to show, as much as we possibly can, how our und
 ### Impacts on Performance
 - 
 ### Optimization 
-- 
+- The TPU features a large (28 MB) on-chip memory to minimize latency from accessing external memory. This design reflects the importance of efficient memory hierarchy in computer architecture.
+- With performance per watt being 30–80 times higher than contemporary CPUs and GPUs, TPUs exemplify the trade-offs between general-purpose flexibility and domain-specific efficiency [reference](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
 ## Performance
 - 
 ### Amdahl's Law
@@ -84,7 +85,9 @@ The purpose of this document is to show, as much as we possibly can, how our und
 - 
 ### Delays
 - 
-## 
+# Conclusion
+
+The study of TPUs through the lens of computer organization highlights the relevance of foundational principles like number systems, Boolean algebra, and processor design in addressing real-world computational challenges. By focusing on domain-specific needs, TPUs achieve unparalleled efficiency in machine learning, making them a benchmark for future hardware innovations.
 
 ## 
 
