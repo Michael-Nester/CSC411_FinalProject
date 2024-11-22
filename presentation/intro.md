@@ -1,5 +1,7 @@
 # Introduction 
 This introduction was written by ChatGPT
+
+
 Good [morning/afternoon], everyone. Today, we’re diving into a groundbreaking piece of technology that’s shaping the future of artificial intelligence and machine learning: Google’s Tensor Processing Units, or TPUs.
 
 TPUs are specialized processors designed specifically to accelerate the complex computations required by neural networks. Unlike general-purpose CPUs and GPUs, TPUs are tailored for a single purpose: making machine learning tasks faster, more efficient, and cost-effective.
