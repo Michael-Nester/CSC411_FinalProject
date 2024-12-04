@@ -145,6 +145,8 @@ The study of TPUs through the lens of computer organization highlights the relev
 
 [{3}Google In-Depth Documentation](https://cloud.google.com/tpu/docs/system-architecture-tpu-vm)
 
+[{4}Version History](https://techovedas.com/how-has-googles-tpus-evolved-in-ai-acceleration-over-10-years/)
+
 ## 
 
 ## 
