@@ -143,6 +143,8 @@ The study of TPUs through the lens of computer organization highlights the relev
 
 [{2}Systolic Array Article](https://en.wikipedia.org/wiki/Systolic_array)
 
+[{3}Google In-Depth Documentation](https://cloud.google.com/tpu/docs/system-architecture-tpu-vm)
+
 ## 
 
 ## 
